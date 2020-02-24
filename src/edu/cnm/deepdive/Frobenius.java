@@ -36,6 +36,7 @@ if (isMcNugget(value - 20)  {
    * @return true if value is a MCNugget number using the specified packSizes, false otherwise.
    */
   public static boolean isGeneralMcNugget(int value, int[] packSizes) {
+    int[] valArray = new int[] {6, 9, 20};
 
     return value >= 0
         && (
