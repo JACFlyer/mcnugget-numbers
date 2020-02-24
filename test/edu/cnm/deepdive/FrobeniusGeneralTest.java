@@ -7,11 +7,12 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
 
 class FrobeniusGeneralTest {
+  int[] inputArray = {20, 9, 6};
+  int value = 29;
 
-  @Test
   @ParameterizedTest
-  @CsvFileSource(resources = "general-mcnugget-data.cvs", numLinesToSkip = 0)
-  void isGeneralMcNugget() {
-      assertEquals(value, Frobenius.isGeneralMcNugget(packSizes));
-      }
+  @CsvFileSource(resources = "general-mcnugget-data.csv")
+  void isGeneralMcNugget(int value, int[] packSizes) {
+    assertEquals(false, Frobenius.isGeneralMcNugget(value, inputArray));
   }
+}
