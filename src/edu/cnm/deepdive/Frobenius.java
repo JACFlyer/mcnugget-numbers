@@ -44,7 +44,7 @@ if (isMcNugget(value - 20)  {
     );
 }
 }
-    
+
 
  /*
     if (value < 0) {
